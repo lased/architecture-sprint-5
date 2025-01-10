@@ -1,0 +1,34 @@
+version: "3.1"
+
+stories:
+  - story: greet and ask architecture
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_architecture
+      - action: utter_architecture_response
+
+  - story: goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: ask for more info
+    steps:
+      - intent: request_info
+      - action: utter_ask_more
+
+  - story: ask about microservices
+    steps:
+      - intent: request_microservices
+      - action: utter_microservices
+
+  - story: ask about rest
+    steps:
+      - intent: request_rest
+      - action: utter_rest
+
+  - story: ask about kafka
+    steps:
+      - intent: request_kafka
+      - action: utter_kafka
